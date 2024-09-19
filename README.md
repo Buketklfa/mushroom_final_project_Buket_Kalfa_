@@ -16,7 +16,9 @@ Projede kullanılan kütüphaneler:
 Bu kütüphaneler, veri işleme, görselleştirme ve modelleme işlemleri için kullanılır.
 Kod
 ## 1. Veri Setini Yükleme
+```ruby
 import pandas as pd
+```
 df = pd.read_csv('/kaggle/input/mushroom-classification/mushrooms.csv')
 ## 2. Veri Analizi
 import matplotlib.pyplot as plt
