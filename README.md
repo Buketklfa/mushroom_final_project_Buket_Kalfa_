@@ -12,13 +12,13 @@ Veri seti, Kaggle'dan alınan mushrooms.csv dosyasını içerir. Bu veri seti 81
 
 ## Kurulum
 Projede kullanılan kütüphaneler:
-•	numpy
-•	pandas
-•	matplotlib
-•	seaborn
-•	sklearn
+*•	numpy*
+*•	pandas*
+*•	matplotlib*
+*•	seaborn*
+*•	sklearn*
 Bu kütüphaneler, veri işleme, görselleştirme ve modelleme işlemleri için kullanılır.
-Kod
+
 ## 1. Veri Setini Yükleme
 ```ruby
 import pandas as pd
