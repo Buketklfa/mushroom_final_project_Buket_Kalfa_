@@ -25,6 +25,10 @@ import pandas as pd
 ```
 df = pd.read_csv('/kaggle/input/mushroom-classification/mushrooms.csv')
 ## 2. Veri Analizi
+Veri setindeki bağımlı değişken olan class'ın (yenilebilir/zehirli) dağılımı görselleştirildi.
+
+odor (koku) özelliğinin sınıf dağılımı üzerinde nasıl bir etkisi olduğuna bakıldı.
+
 ```ruby
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -46,6 +50,9 @@ plt.show()
 ```
 
 ## 3. Veri Ön İşleme
+Veriler etiketlendi ve modellemeye hazır hale getirildi.
+Eğitim ve test veri setleri ayrıldı.
+
 ```ruby
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
@@ -60,6 +67,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 ```
 
 ## 4. Gözetimli Öğrenme: Logistic Regression
+Logistic Regression algoritması kullanılarak mantarların sınıflandırılması sağlandı.
+Modelin doğruluk skoru ve sınıflandırma raporu alındı.
+
+
 ```ruby
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
@@ -74,6 +85,10 @@ print(classification_report(y_test, y_pred))
 ```
 
 ## 5. Gözetimsiz Öğrenme: K-Means Kümeleme
+
+K-Means algoritması ile mantarlar kümelere ayrıldı ve kümelerin sınıflarla olan ilişkisi incelendi.
+
+
 ```ruby
 from sklearn.cluster import KMeans
 import seaborn as sns
