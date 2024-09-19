@@ -1,12 +1,12 @@
 # mushroom_final_project_Buket_Kalfa_
 mushroom_final_project_Buket_Kalfa_
 
-Mantar Sınıflandırma Projesi
+# Mantar Sınıflandırma Projesi
 Bu proje, mantarların yenilebilir veya zehirli olduğunu sınıflandırmak için makine öğrenmesi tekniklerini kullanır. İki temel öğrenme tekniği uygulanmıştır: Gözetimli Öğrenme (Logistic Regression) ve Gözetimsiz Öğrenme (K-Means Kümeleme).
-[Kaggle]https://www.kaggle.com/code/buketkalfa/notebook6eeeb89bca
-Veri Seti
+[Kaggle Notebook "notebook6eeeb89bca" linki]https://www.kaggle.com/code/buketkalfa/notebook6eeeb89bca
+## Veri Seti
 Veri seti, Kaggle'dan alınan mushrooms.csv dosyasını içerir. Bu veri seti 8124 örnek ve 23 özelliğe sahiptir. Özellikler, mantarların çeşitli fiziksel ve kimyasal özelliklerini temsil eder.
-Kurulum
+## Kurulum
 Projede kullanılan kütüphaneler:
 •	numpy
 •	pandas
@@ -15,10 +15,10 @@ Projede kullanılan kütüphaneler:
 •	sklearn
 Bu kütüphaneler, veri işleme, görselleştirme ve modelleme işlemleri için kullanılır.
 Kod
-1. Veri Setini Yükleme
+## 1. Veri Setini Yükleme
 import pandas as pd
 df = pd.read_csv('/kaggle/input/mushroom-classification/mushrooms.csv')
-2. Veri Analizi
+## 2. Veri Analizi
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -32,7 +32,7 @@ plt.figure(figsize=(12,6))
 sns.countplot(x='odor', data=df, hue='class')
 plt.title('Koku Özelliği ile Sınıf Dağılımı')
 plt.show()
-3. Veri Ön İşleme
+## 3. Veri Ön İşleme
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
@@ -43,7 +43,7 @@ for column in df.columns:
 X = df.drop('class', axis=1)
 y = df['class']
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-4. Gözetimli Öğrenme: Logistic Regression
+## 4. Gözetimli Öğrenme: Logistic Regression
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score, classification_report
 
@@ -54,7 +54,7 @@ y_pred = model.predict(X_test)
 print('Doğruluk Skoru:', accuracy_score(y_test, y_pred))
 print('Sınıflandırma Raporu:')
 print(classification_report(y_test, y_pred))
-5. Gözetimsiz Öğrenme: K-Means Kümeleme
+## 5. Gözetimsiz Öğrenme: K-Means Kümeleme
 from sklearn.cluster import KMeans
 import seaborn as sns
 import matplotlib.pyplot as plt
