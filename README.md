@@ -3,6 +3,7 @@ mushroom_final_project_Buket_Kalfa_
 
 Mantar Sınıflandırma Projesi
 Bu proje, mantarların yenilebilir veya zehirli olduğunu sınıflandırmak için makine öğrenmesi tekniklerini kullanır. İki temel öğrenme tekniği uygulanmıştır: Gözetimli Öğrenme (Logistic Regression) ve Gözetimsiz Öğrenme (K-Means Kümeleme).
+[Kaggle]https://www.kaggle.com/code/buketkalfa/notebook6eeeb89bca
 Veri Seti
 Veri seti, Kaggle'dan alınan mushrooms.csv dosyasını içerir. Bu veri seti 8124 örnek ve 23 özelliğe sahiptir. Özellikler, mantarların çeşitli fiziksel ve kimyasal özelliklerini temsil eder.
 Kurulum
